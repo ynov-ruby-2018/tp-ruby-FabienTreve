@@ -1,0 +1,15 @@
+<h1> <%= "Bienvenue #{current_user.email}" %></h1>
+
+<div id="txt_area">
+<%= form_tag homepage_index_path, method: :post do %>
+  <%= text_area_tag 'comment', nil %>
+  <br>
+  <%= submit_tag 'Save' %>
+<% end %>
+</div>
+
+<ul>
+<% @comments.each do |comment| %>
+  <li><%= comment.content %></li>
+<% end %>
+</ul>

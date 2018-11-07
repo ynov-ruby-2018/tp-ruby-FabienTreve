@@ -1,0 +1,11 @@
+#txt_area{
+  margin: auto;
+}
+
+ul{
+  text-align: center;
+}
+
+li{
+  border : 2px solid black;
+}
