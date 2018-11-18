@@ -1,5 +1,7 @@
 class HomepageController < ApplicationController
-
+  # Aucune vérification de l'authentification ?
+  # authenticate_user!
+  
   def index
     #raise current_user.inspect
     # Conseil: évitez le code commenté
